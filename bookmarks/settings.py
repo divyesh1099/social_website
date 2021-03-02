@@ -141,6 +141,11 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '1084503052068475' # Facebook App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '9207ac4dda1c0007db04dce3edf8afa8' # Facebook App Secret
 
+# Redis Settings Configuration
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
