@@ -6,6 +6,7 @@
 <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
+
 <div id="header">
 {% if messages %}
 <ul class="messages">
@@ -40,9 +41,21 @@
     {% endif %}
     </span>
     </div>
+    <li {% if section == "images" %}class="selected"{% endif %}>
+        <a href="{% url "images:list" %}">Images</a>
+    </li>
 <div id="content">
+    <li {% if section == "people" %}class="selected"{% endif %}>
+        <a href="{% url "user_list" %}">People</a>
+    </li>
 {% block content %}
 {% endblock %}
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js">
+</script>
+
+    {% block domready %}
+    {% endblock %}
 </body>
 </html>
