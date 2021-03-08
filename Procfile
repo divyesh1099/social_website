@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 bookmarks.wsgi:application
+web: gunicorn bookmarks.wsgi
