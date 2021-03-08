@@ -27,7 +27,7 @@ SECRET_KEY = 'epe5u0*!3s2+q5gh$0k@fnwq7ik7*eew@l&=^#r%x$@9v%)$%&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1', '3f6ad53c.ngrok.io', '82f971c199c7.ngrok.io']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mrugakshi-social-website.herokuapp.com']
 
 
 # Application definition
@@ -150,6 +150,7 @@ REDIS_DB = 0
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Media Settings
 MEDIA_URL = '/media/'
